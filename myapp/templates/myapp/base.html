@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="shadow-lg">
+        <div class="container flex flex-wrap justify-between mx-auto">
+            <a class="flex items-center" href="">
+                <img class="h-11" src="https://cdn4.iconfinder.com/data/icons/plastic-iconshock/256/Shopping_cart.png" alt="">
+                <span class="self-center text-xl font-semibold">Digital Market</span>
+            </a>
+
+            <div class="flex items-center">
+                <a href="" class="mr-6 text-sm font-medium text-gray-500">Dashboard</a>
+                <a href="" class="mr-6 text-sm font-medium text-gray-500">Sales</a>
+                <a href="" class="mr-6 text-sm font-medium text-gray-500">Order</a>
+                <a href="" class="mr-6 text-sm font-medium text-gray-500">Create Products</a>
+                <a href="" class="mr-6 text-sm font-medium text-gray-500">My purchase</a>
+                <a href="" class="mr-6 text-sm font-medium text-gray-500">Logout</a>
+
+                
+            </div>
+            
+        </div>
+
+    </nav>
+
+    {% block body %}
+    {% endblock %}
+</body>
+</html>
