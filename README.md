@@ -1,5 +1,5 @@
 # digital-market
 
 Login logout function
-Payment get way Stripe is used 
-Graph etc.
+Payment gets way Stripe is used 
+Graph(chart js) etc.
