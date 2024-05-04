@@ -5,8 +5,8 @@
 <div class="product-container flex">
     {% for product in products %}
         <div class="product shadow-lg rounded-lg m-10 w-1/4">
-            <div class="product-image">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/1/14/No_Image_Available.jpg" alt="">
+            <div class="product-image" style="height: 490px;">
+                <img src="{{product.file.url}}" alt="" >
             </div>
             <div class="p-5 ">
                 <div class="font-bold text-center">
@@ -19,7 +19,7 @@
                     ${{ product.price }}
                 </div>
                 <div >
-                    <a href="{% url 'myapp:detail' product.id  %}" class="bg-green-500 text-center text-white px-2 py-1">View Details </a>
+                    <a href="{% url 'detail' product.id  %}" class="bg-green-500 text-center text-white px-2 py-1">View Details </a>
                 </div>
             </div>
         </div>

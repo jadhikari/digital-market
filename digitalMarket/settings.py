@@ -81,6 +81,9 @@ DATABASES = {
     }
 }
 
+STRIPE_SECRET_KEY='sk_test_51PCipkFSMu6tIQUFuJwILvEOkJq2Jjm3EmksMZnivCTH8HfLmPVGg96qRd3ArsmfJMts9NRV5q7Rsgl7bvsl5aK400BwxuOIPU'
+STRIPE_PUBLISHABLE_KEY='pk_test_51PCipkFSMu6tIQUF4Yd6R4M7itVsIEGTgBuztWWdOFrwj8VahV1VbTtELkTgPAjJDrw3ukoBujcZOmRFwZpFjQ1j00lC2DZgOJ'
+
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -118,7 +121,13 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/login'
+LOGIN_URL = '/login'
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
